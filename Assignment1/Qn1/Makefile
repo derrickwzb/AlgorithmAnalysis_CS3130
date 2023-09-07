@@ -30,12 +30,13 @@ $(EXEC) : $(OBJS)
 
 # target ocean.o depends on ocean.cpp, ocean.h
 # and is created with command $(CXX) given the options $(CXX_FLAGS)
-uShell.o : uShell.cpp uShell.h
-	$(CXX) $(CXX_FLAGS) -c uShell.cpp -o uShell.o
+# uShell.o : uShell.cpp uShell.h
+# 	$(CXX) $(CXX_FLAGS) -c uShell.cpp -o uShell.o
 	
 # target driver-sample.o depends on both driver-sample.cpp, ocean.h, and prng.h
 # and is created with command $(CXX) given the options $(CXX_FLAGS)
-main.o : main.cpp uShell.h 
+# main.o : main.cpp uShell.h 
+main.o : main.cpp 
 	$(CXX) $(CXX_FLAGS) -c main.cpp -o main.o
 
 # says that clean is not the name of a target file but simply the name for
