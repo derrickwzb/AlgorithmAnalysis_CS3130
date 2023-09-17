@@ -5,9 +5,9 @@ CXX_FLAGS = -std=c++17 -pedantic-errors -Wall -Wextra -Werror
 # flag to linker to make it link with math library
 LDLIBS    = -lm
 # list of object files
-OBJS      = main.o uShell.o
+OBJS      = main.o 
 # name of executable program
-EXEC      = uShell.exe
+EXEC      = main.exe
 
 # by convention the default target (the target that is built when writing
 # only make on the command line) should be called all and it should
